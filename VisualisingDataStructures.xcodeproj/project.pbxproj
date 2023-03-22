@@ -14,6 +14,13 @@
 		E74081ED29CB5772005B268E /* VisualisingDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74081EC29CB5772005B268E /* VisualisingDataStructuresTests.swift */; };
 		E74081F729CB5772005B268E /* VisualisingDataStructuresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74081F629CB5772005B268E /* VisualisingDataStructuresUITests.swift */; };
 		E74081F929CB5772005B268E /* VisualisingDataStructuresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74081F829CB5772005B268E /* VisualisingDataStructuresUITestsLaunchTests.swift */; };
+		E740820729CB5798005B268E /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740820629CB5798005B268E /* Stack.swift */; };
+		E740820929CB57A4005B268E /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740820829CB57A4005B268E /* Queue.swift */; };
+		E740820B29CB57AB005B268E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740820A29CB57AB005B268E /* LinkedList.swift */; };
+		E740820D29CB57E8005B268E /* CollectionsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740820C29CB57E8005B268E /* CollectionsError.swift */; };
+		E740821029CB5B46005B268E /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740820F29CB5B46005B268E /* StackView.swift */; };
+		E740821229CB5B4E005B268E /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740821129CB5B4E005B268E /* QueueView.swift */; };
+		E740821429CB5B56005B268E /* LinkedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740821329CB5B56005B268E /* LinkedListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		E74081F229CB5772005B268E /* VisualisingDataStructuresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualisingDataStructuresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74081F629CB5772005B268E /* VisualisingDataStructuresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresUITests.swift; sourceTree = "<group>"; };
 		E74081F829CB5772005B268E /* VisualisingDataStructuresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E740820629CB5798005B268E /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		E740820829CB57A4005B268E /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		E740820A29CB57AB005B268E /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		E740820C29CB57E8005B268E /* CollectionsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsError.swift; sourceTree = "<group>"; };
+		E740820F29CB5B46005B268E /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		E740821129CB5B4E005B268E /* QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
+		E740821329CB5B56005B268E /* LinkedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,8 @@
 		E74081DA29CB576F005B268E /* VisualisingDataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				E740820E29CB5B30005B268E /* View */,
+				E740820529CB578A005B268E /* Model */,
 				E74081DB29CB576F005B268E /* VisualisingDataStructuresApp.swift */,
 				E74081DD29CB576F005B268E /* ContentView.swift */,
 				E74081DF29CB5771005B268E /* Assets.xcassets */,
@@ -125,6 +141,27 @@
 				E74081F829CB5772005B268E /* VisualisingDataStructuresUITestsLaunchTests.swift */,
 			);
 			path = VisualisingDataStructuresUITests;
+			sourceTree = "<group>";
+		};
+		E740820529CB578A005B268E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E740820629CB5798005B268E /* Stack.swift */,
+				E740820829CB57A4005B268E /* Queue.swift */,
+				E740820A29CB57AB005B268E /* LinkedList.swift */,
+				E740820C29CB57E8005B268E /* CollectionsError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E740820E29CB5B30005B268E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E740820F29CB5B46005B268E /* StackView.swift */,
+				E740821129CB5B4E005B268E /* QueueView.swift */,
+				E740821329CB5B56005B268E /* LinkedListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E74081DE29CB576F005B268E /* ContentView.swift in Sources */,
+				E740821029CB5B46005B268E /* StackView.swift in Sources */,
+				E740821429CB5B56005B268E /* LinkedListView.swift in Sources */,
+				E740821229CB5B4E005B268E /* QueueView.swift in Sources */,
+				E740820729CB5798005B268E /* Stack.swift in Sources */,
+				E740820D29CB57E8005B268E /* CollectionsError.swift in Sources */,
+				E740820B29CB57AB005B268E /* LinkedList.swift in Sources */,
 				E74081DC29CB576F005B268E /* VisualisingDataStructuresApp.swift in Sources */,
+				E740820929CB57A4005B268E /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
